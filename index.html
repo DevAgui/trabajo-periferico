@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFC</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="./javascripts/javascript.js"></script>
+    <link rel="shortcut icon" href="./images/nfc-icon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav class="topnav">
+        <a href="#" class="active">Introducción</a>
+        <a href="#uso">¿Para qué se usa?</a>
+        <a href="#tipos">Tipos</a>
+        <a href="#funcionamiento">¿Cómo funciona?</a>
+        <a href="#instalacion">Instalación</a>
+        <a href="#fabricantes">Principales Fabricantes</a>
+        <a href="#precios">¿Dónde encontrarlos y precios?</a>
+        <a href="#opinion">Desenlace</a>
+        <a href="#webgrafia">Webgrafía</a>
+    </nav>
+    <div id="container">
+        <section id="introduccion">
+            <h1 id="titulo">NFC</h1>
+            <div id="container-imagen-principal">
+                <img id="imagen-principal" src="./images/nfc-background2.png">
+            </div>
+            <div>
+            <h2 class="margin-top-bot">¿QUÉ ES Y QUÉ HACE?</h2>
+            <p>NFC (Near Field Communication) es una tecnología inalámbrica de alta frecuencia, la cual usa un campo electromagnético generado mediante inducción. Nos permite recibir señales así como enviarlas.</p>
+            <p>Tienen su origen en las tarjetas RFID, que son los chips que solemos encontrar en las tiendas en los productos para evitar que sean extraídos maliciosamente.</p>
+            <p>Si hablamos acerca del dispositivo, estamos hablando de tarjetas que poseen un chip como ésta:</p>
+            <img class="imagenes-centradas" src="images/nfc-tag.jpg">
+            </div>
+        </section>
+        <section id="uso">
+            <h2 class="margin-top-bot">¿PARA QUÉ SE USA?</h2>
+            <ul>
+                <li><b>IDENTIFICACIÓN:</b>
+                    <p>
+                    Nos sirve para validar nuestros datos personales, como para poder entrar a determinados recintos.
+                </p>
+                <img class="imagenes-centradas" src="./images/dni-nfc.jpg">
+                </li>
+                <li><b>TRANSFERENCIA DE DATOS:</b>
+                    <p>Aunque no es su uso habitual, nos permite transferir datos y recibir datos, como nuestra geolocalización, eventos inminentes, etc.<p>
+                <img class="imagenes-centradas" src="images/amibo-nfc.jpg">
+                </li>
+                <li><b>SINCRONIZACIÓN DE DISPOSITIVOS:</b>
+                    <p>
+                    Podemos usarlos para conectarnos con unos altavoces, unos cascos, etc. sin tener que pasar por la conexión al bluetooth y tener que esperar a que los dispositivos se vinculen.
+                </p>
+                <img class="imagenes-centradas" src="images/altavoz-nfc.jpg">
+                </li>
+                <li><b>PAGO CON TELÉFONO MÓVIL:</b>
+                    <p>
+                    Si tenemos la tarjeta bancaria vinculada al móvil, podemos pagar con él sólo acercando el móvil al datáfono. Hasta la llegada de Bizum era la forma más usada de pago digital, y es sin duda, su uso más común.
+                </p>
+                <img class="imagenes-centradas" src="images/pago-con-tarjeta-nfc.jpg">
+                </li>
+                <li><b>AUTOMATIZACIÓN DE TAREAS:</b>
+                    <p>
+                    Podemos tener las tarjetas en la casa o en cualquier lado y que estén escritas con una serie de programas que, por ejemplo, si acercamos el móvil a la tarjeta nos ponga el móvil en silencio y nos configure y active una alarma.
+                </p>
+                <img class="imagenes-centradas" src="images/automatizacion-nfc.jpg">
+            </li>
+            </ul>
+        </section>
+        <section id="tipos">
+            <h2 class="margin-top-bot">TIPOS</h2>
+            <p>En el mercado podemos encontrar cinco tipos de etiqueta que sigan el éstandar de NFC Fórum (organismo encargado de la estandarización):</p>
+            <img class="imagenes-centradas" src="images/nfc-forum.jpg">
+            <ul>
+                <li>
+                    <b>TIPO 1:</b>
+                    <p>Etiqueta de escritura y lectura y tamaño entre 96 bytes y 2KB.</p>
+                </li>
+                <li>
+                    <b>TIPO 2:</b>
+                <p>Admite escritura y lectura y un modo de sólo lectura. Memoria entre 46 bytes y 2KB.</p>
+                </li>
+                <li>
+                    <b>TIPO 3:</b>
+                <p>Como el tipo 2. Tamaño de memoria de hasta 1MB.</p>
+                </li>
+                <li>
+                    <b>TIPO 4:</b>
+                <p>También como el tipo 2. El tamaño de memoria varía, pero tiene un límite de 32 KB.</p>
+                </li>
+                <li>
+                    <b>TIPO 5:</b>
+                <p>De todos los tipos que cumplen el estandarizado de NFC Fórum éste es el más reciente. Igual que el tipo 2 y un máximo de memoria de 64 KB.</p>
+                </li>
+            </ul>
+            <p>Además de NFC Fórum, hay empresas que crean su propio estándar. Entre ellas, los estándares más destacados son:</p>
+            <ul>
+                <li>
+                    <img class="imagenes-centradas" src="images/ntag-logo.png">
+                    <b>NTAG:</b>
+                <p>Son las etiquetas más compatibles con móviles, y las más usuales que nos podemos encontrar son:</p>
+                </li>
+                <li>
+                    <em>NTAG210.</em>
+                </li>
+                <li>
+                    <em>NTAG213.</em>
+                </li>
+                <li>
+                    <em>NTAG215.</em> 
+                </li>
+            </ul>
+            <p>Las diferencia más grande entre los chips se encuentra en la memoria disponible (48, 144 y 540 bytes respectivamente).</p>
+            <ul>
+                <li>
+                    <img class="imagenes-centradas" src="images/mifare-logo.png">
+                    <b>Mifare:</b>
+                    <p>Pertenece a NXP Semiconductors. Los tipos de chip más comunes de Mifare son:</p>
+                </li>
+                <li>
+                    <em>Classic:</em>
+                    <p>Es uno de los formatos más antiguos (creado en 1994) y no es compatible con la gran mayoría de dispositivos del mercado ya que se basa en su propio formato. El rango de memoria de éste tipo de etiqueta abarca desde 1KB hasta 4KB.</p>
+                </li>
+                <li>
+                    <em>Ultralight:</em>
+                    <p>Es una evolución del anterior basado en el Tipo 2 de NFC Fórum, con una gran compatibilidad con los dispositivos actuales. Tienen una memoria inferior respecto al Classic, llegando a tener 512 bytes.</p>
+                </li>
+                <li>
+                    <em>Desfire:</em>
+                    <p>Evoluciona a partir del Ultralight siendo más seguro a nivel software y a nivel hardware, se basan en el estándar Tipo 4 de NFC Fórum. También es compatible con la mayoría de dispositivos, usándose para gestión de pagos así como transporte público. Memoria entre 2 y 6 KB.</p>
+                </li>
+            </ul>
+        </section>
+        <section id="funcionamiento">
+            <h2 class="margin-top-bot">FUNCIONAMIENTO</h2>
+            <p>Como hemos dicho anteriormente, éstos dispositivos funcionan a partir de un campo electromagnético creado por inducción a través de las antenas en espiral de dos dispositivos.
+            La tecnología NFC puede funcionar de dos formas:</p>
+            <ul>
+                <li>
+                    <b>Activa:</b> 
+                    <p>Está diseñada para intercomunicar dos dispositivos, puesto que ambos dispositivos crean su propio campo electromagnético.</p>
+                    <img class="imagenes-centradas" src="images/tecnologia-activa-nfc.jpg">
+                </li>
+                <li>
+                    <b>Pasiva:</b>
+                    <p>Sólo un dispositivo crea un campo electromagnético, es decir, el activo, mientras que el otro aprovecha éste campo para transferir datos. Éste es el que se usa para intercomunicar una tarjeta con un dispositivo.</p>
+                    <img class="imagenes-centradas" src="images/tecnologia-pasiva-nfc.jpg">
+                </li>
+            </ul>
+            <p>Para poder vincular un dispositivo con otro o con una tarjeta, hay que acercarlo como mínimo a unos 10 cm. Tiene una velocidad máxima de 424 kbit/s, lo que nos permite interconectar nuestro teléfono móvil con una etiqueta en un chasquido.</p>
+        </section>
+        <section id="instalacion">
+            <h2 class="margin-top-bot">INSTALACIÓN</h2>
+            <h3 class="margin-top-bot">EN DISPOSITIVOS MÓVILES</h3>
+            <p>Uno de los inconvenientes con los que nos encontramos a la hora de intentar aplicar ésta tecnología es que nuestro dispositivo móvil venga integrada con ella. Pero no es el fin del mundo. Tenemos una serie de opciones:</p>
+            <ul>
+                <li>
+                    <p>Comprar una etiqueta NFC y pegarla a nuestro móvil.</p>
+                    <img class="imagenes-centradas" src="images/tarjeta-pegada.jpg">
+                </li>
+                <li>
+                    <p>Cambiar la SIM de nuestro móvil por una con NFC integrado.</p>
+                    <img class="imagenes-centradas" src="images/tarjeta-sim-nfc.jpg">
+                </li>
+            </ul>
+            <h3 class="margin-top-bot">EN ORDENADORES</h3>
+            <p>Ésta tecnología está más orientada a dispositivos móviles, pero en caso de que queramos leer o configurar una tarjeta en nuestra computadora, siempre podemos comprar un lector de NFC con conector USB tipo A.</p>
+            <img class="imagenes-centradas" src="images/lector-tarjeta-nfc.jpg">
+        </section>
+        <section id="fabricantes">
+            <h2 class="margin-top-bot">PRINCIPALES FABRICANTES</h2>
+            <h3 class="margin-top-bot">FABRICANTES DE TARJETAS</h3>
+            <div class="columnas">
+                <a href="https://www.tagstand.com/">
+                    <img class="mitad" src="images/tagstand.png">
+                </a>
+                <a href="https://www.rfidhy.com/es/rfid-products/nfc-tag/">
+                    <img class="mitad" src="images/rfidhy.png">
+                </a>
+        </div>
+        <div class="clearfloat"></div>
+            <h3 class="margin-top-bot">FABRICANTES EN MÓVILES</h3>
+            <div class="columnas">
+                <a href="https://www.mi.com/es/">
+                    <img class="mitad" src="images/xiaomi.jpg">
+                </a>
+                <a href="https://www.samsung.com/es/">
+                    <img class="mitad" src="images/samsung.png">
+                </a>
+        </div>
+        <div class="clearfloat"></div>
+        </section>
+        <section id="precios" class="columna">
+                <h2 class="margin-top-bot">DÓNDE ENCONTRAR TARJETAS Y PRECIOS</h2>
+                <div class="tercio">
+                    <h3>AMAZON</h3>
+                    <a href="https://www.amazon.es/PERFETSELL-Compatibles-Inteligentes-Dispositivos-Habilitados/dp/B08R3SKJZ6/ref=sr_1_1_sspa?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&keywords=tarjeta+nfc&qid=1637949271&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEzTkI4NEg4M1dBWVVHJmVuY3J5cHRlZElkPUEwODQwMjM1MUZYRElCRFNMV05ISyZlbmNyeXB0ZWRBZElkPUEwNjAwODYwUEJEV1kxSkZXUDhFJndpZGdldE5hbWU9c3BfYXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ==">
+                        <img src="images/20pcs-nfc.jpg" id="amazon">
+                    </a>
+                    <p>A unos 14 euros un pack de 20 piezas.</p>
+                </div>
+                <div class="tercio">
+                    <h3>ALIEXPRESS</h3>
+                    <a href="https://es.aliexpress.com/item/4001067160134.html?spm=a2g0o.productlist.0.0.2a1944a2lWKwuJ&algo_pvid=25f9eec4-f72d-466b-b42c-d617cbdfba97&algo_exp_id=25f9eec4-f72d-466b-b42c-d617cbdfba97-2&pdp_ext_f=%7B%22sku_id%22%3A%2212000015850448494%22%7D">
+                        <img src="images/10pcs-nfc.PNG">
+                    </a>
+                    <p>2'14 euros un pack de 10 piezas (muy fiables).</p>
+                </div>
+                    <div class="tercio">
+                        <h3>EBAY</h3>
+                        <a href="https://www.ebay.es/itm/174115762582?hash=item288a1bb196:g:oRsAAOSwh~xd54q2">
+                            <img src="images/1pc-nfc.jpg">
+                        </a>
+                        <p>3'95 euros una tarjeta</p>
+                    </div>
+                </div>
+                <div class="clearfloat"></div>
+        </section>
+        <section id="opinion">
+            <h2 class="margin-top-bot">OPINIÓN PERSONAL</h2>
+            <p>Creo que los dispositivos NFC tienen mucho futuro como forma de automatización de procesos a nivel del hogar y en la domotización. </p>
+            <p>Está bastante limitado al rango de acción que tiene ésta tecnología, pero a la misma vez eso es una ventaja puesto que es difícil que alguien obtenga información nuestra (ya sea personal o bancaria) ya que el mero hecho de que la distancia sea tan corta, nos obliga por así decirlo a acercar nuestro móvil solo ante una situación cómoda.</p>
+            <p>También creo que se le va a seguir dando uso para verificación de datos personales e intercambio de información de poco tamaño y que puede ser una herramienta maravillosa si la utilizamos para hacernos la vida más sencilla.</p>
+        </section>
+    </div>
+    <section id="webgrafia">
+        <h2 class="margin-top-bot">WEBGRAFÍA</h2>
+        <b>
+            <a href="https://www.xataka.com/basics/nfc-android-que-como-activarlo-se-puede-usar">Como se puede usar el NFC - Xataka</a>
+        </b>
+        <br>
+        <br>
+        <b>
+            <a href="https://www.shopnfc.com/es/content/11-como-elegir-la-etiqueta-nfc">Tipos de etiquetas NFC</a>
+        </b>
+        <br>
+        <br>
+        <b>
+            <a href="https://www.xataka.com/otros-dispositivos/etiquetas-nfc-que-siete-usos-originales-que-puedes-darle">Usos originales NFC - Xataka</a>
+        </b>
+        <br>
+        <br>
+        <b>
+            <a href="https://www.xatakamovil.com/tutoriales/nfc-movil-que-sirve-siete-usos-para-sacarle-todo-partido">Funcionamiento NFC - Xataka</a>
+        </b>
+        <br>
+        <br>
+        <b>
+            <a href="https://www.youtube.com/watch?v=lTMGtfjbszE">¿Qué es el NFC? - Vídeo</a>
+        </b>
+        <br>
+        <br>
+        <b>
+            <a href="https://www.youtube.com/watch?v=gRPgOrehhHI&t=165s">Usos NFC - Vídeo</a>
+        </b>
+    </section>
+    <footer>
+    </footer>
+</body>
+</html>

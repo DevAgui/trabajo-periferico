@@ -1,0 +1,153 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0%;
+    padding: 0%;
+}
+#container{
+    margin: 0% 2%;
+}
+#titulo{
+    margin: 2% 0%;
+    color: #050861;
+    font-family: Alegreya;
+    font-size: 2.3em;
+    text-align: center;
+}
+/***** estilo imágenes *****/
+#container-imagen-principal{
+    width: 100%; 
+}
+#imagen-principal{
+    width: 80%;
+    height: 80vh;
+    margin: auto;
+    display: block;
+}
+.imagenes-centradas{
+    padding-top: 4%;
+    padding-bottom: 4%;
+    display: block;
+    margin: auto;
+    width: 40%;
+    height: 30vh;
+}
+.margin-top-bot{
+    margin: 8% 0%;
+}
+p{
+    padding: 0% 4%;
+}
+p, em, b{
+    text-align: justify;
+    font-family: Montserrat;
+    font-size: 1.7em;
+}
+em, b{
+    color: #050861;
+}
+b a{
+    color: #050861;
+}
+#webgrafia{
+    text-align: center;
+}
+h2,h3,h4,h5,h6{
+    color: #050861;
+    text-align: center;
+    font-family: Alegreya;
+    font-size: 2em;
+}
+
+/****** estilo del navegador*****/
+nav{
+    font-size: 1.3em;
+    font-family: Alegreya;
+    background-color: #050861;
+    z-index: 1;
+    position: sticky;
+    top: 0px;
+    padding: 1%;
+    color: #ffffff;
+}
+nav a{
+    color: #ffffff;
+    text-decoration: none;
+    padding: 1%;
+}
+nav a:hover{
+    background-color: #ffffff;
+    color: #050861;
+}
+
+/***** columnas *****/
+.columnas{
+    width: 100%;
+    margin: auto;
+}
+.mitad{
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+    padding: 2%;
+    float: right;
+}
+.tercio{
+    border: 1px solid #050861;
+    width: 33%;
+    height: 80vh;
+    float: left;
+    box-sizing: border-box;
+    padding: 2%;
+}
+.tercio img{
+    margin: auto;
+    display: block;
+    width: 80%;
+    height: 40vh;
+}
+.clearfloat{
+    clear: both;
+}
+footer{
+    width: 100%;
+    height: 20vh;
+    background-color: #050861;
+    color: #ffffff;
+}
+#webgrafia{
+    width: 100%;
+    margin-bottom: 10%;
+}
+@media only screen and (max-width:500px){
+    #titulo{
+        margin: 10% 0%;
+    }
+    .margin-top-bot{
+        margin: 15% 0%;
+    }
+    .mitad{
+        width: 98%;
+        padding: 2%;
+    }
+    .tercio{
+        width: 98%;
+        height: 80vh;
+        float: left;
+        box-sizing: border-box;
+        padding: 2%;
+    }
+    .imagenes-centradas{
+        padding-top: 15%;
+        padding-bottom: 15%;
+        display: block;
+        margin: auto;
+        width: 80%;
+        height: 30vh;
+    }
+    ul li p{
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+}
